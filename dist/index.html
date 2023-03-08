@@ -6,85 +6,234 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/dist/css/main.css" />
+    <link rel="stylesheet" href="" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
       crossorigin="anonymous"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css?family=Dosis"
+      href="https://fonts.googleapis.com/css2?family=Genos:wght@100;300;400;700&family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/024580a138.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <main class="main-layout">
-      <div class="navbar">
-        <img src="./img/logo.png" alt="" />
-        <div class="links">
-          <a href="#home" class="active">Home</a>
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#contact">Contact</a>
+    <section id="home" class="container">
+      <main class="main-layout">
+        <div class="navbar top">
+          <div class="links">
+            <a href="#home" class="link active">Home</a>
+            <a href="#about" class="link">About</a>
+          </div>
+          <img src="./img/logo-3.png" alt="" />
+          <div class="links">
+            <a href="#work" class="link">Work</a>
+            <a href="#contact" class="link">Contact</a>
+          </div>
+        </div>
+        <div class="header">
+          <div class="img-wrapper">
+            <img src="./img/showcase-3.jpg" alt="" />
+          </div>
+          <div class="head-line">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>I specialize in html css sass js and wasting time on bs</p>
+            <a href="#work" class="btn-work btn-light">Zobacz Nasze Prace</a>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section id="about" class="section section-hidden">
+      <h3 class="main-h3">Jak przebiega wspolpraca</h3>
+      <div class="border"></div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque?
+        esa blue kmisd aesra Lorem ipsum dolor sit amet.
+      </p>
+    </section>
+    <section class="realization">
+      <div class="operations operations-hidden">
+        <div class="operations__tab-container">
+          <button
+            class="btn-tab operations__tab operations__tab--1 operations__tab-active"
+            data-tab="1"
+          >
+            <span>01</span>Spotkanie z Klientem
+          </button>
+          <button
+            class="btn-tab operations__tab operations__tab--2"
+            data-tab="2"
+          >
+            <span>02</span>Omowienie Projektu
+          </button>
+          <button
+            class="btn-tab operations__tab operations__tab--3"
+            data-tab="3"
+          >
+            <span>03</span>Przebieg i Realizacja
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <i class="fa-solid fa-user-group fa-3x"></i>
+          </div>
+
+          <h5 class="operations__header">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Laudantium, laborum corporis? Tenetur, aliquid? Sapiente nulla natus
+            ullam temporibus, consequuntur labore illo quibusdam enim expedita
+            velit dolorum, soluta tenetur perspiciatis officia?
+          </p>
+        </div>
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <i class="fa-solid fa-pen-to-square fa-3x"></i>
+          </div>
+
+          <h5 class="operations__header">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Laudantium, laborum corporis? Tenetur, aliquid? Sapiente nulla natus
+            ullam temporibus, consequuntur labore illo quibusdam enim expedita
+            velit dolorum, soluta tenetur perspiciatis officia?
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <i class="fa-solid fa-shop fa-3x"></i>
+          </div>
+          <h5 class="operations__header">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Laudantium, laborum corporis? Tenetur, aliquid? Sapiente nulla natus
+            ullam temporibus, consequuntur labore illo quibusdam enim expedita
+            velit dolorum, soluta tenetur perspiciatis officia?
+          </p>
         </div>
       </div>
-      <div class="head-line">
-        <h1>I am Thomas the</h1>
-        <p>I specialize in html css sass js and wasting time on bs</p>
-        <a href="#" class="btn-light">View My Work</a>
-      </div>
-    </main>
-    <section class="specialization">
+    </section>
+    <section id="work" class="section section-hidden">
+      <div class="margin"></div>
       <div class="content">
-        <h3>I specialize in</h3>
+        <h3 class="main-h3">Nasze projekty</h3>
         <div class="border"></div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque?
           esa blue kmisd aesra Lorem ipsum dolor sit amet.
         </p>
       </div>
-      <div class="container-grid">
-        <div class="box">
-          <i class="fas fa-file-alt fa-2x"></i>
-          <h4 class="title-about">concepting</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            perferendis commodi laborum minima sapiente modi ab quisquam,
-            placeat, ut ipsam nulla voluptates deleniti esse. Fugiat, maxime.
-            Corporis, repellat recusandae. Eaque.
-          </p>
+      <div class="items">
+        <div class="item item-1">
+          <div class="item-image">
+            <img src="./img/work/altana.jpeg" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Projekt</p>
+              <h2 class="item-text-title">Altana</h2>
+            </div>
+          </div>
         </div>
-        <div class="box">
-          <i class="fas fa-desktop fa-2x"></i>
-          <h4 class="title-about">ui/ux</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            perferendis commodi laborum minima sapiente modi ab quisquam,
-            placeat, ut ipsam nulla voluptates deleniti esse. Fugiat, maxime.
-            Corporis, repellat recusandae. Eaque.
-          </p>
+        <div class="item item-2">
+          <div class="item-image">
+            <img src="./img/work/dom.jpeg" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Projekt</p>
+              <h2 class="item-text-title">Dom</h2>
+            </div>
+          </div>
         </div>
-        <div class="box">
-          <i class="fas fa-object-ungroup fa-2x"></i>
-          <h4 class="title-about">visual design</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            perferendis commodi laborum minima sapiente modi ab quisquam,
-            placeat, ut ipsam nulla voluptates deleniti esse. Fugiat, maxime.
-            Corporis, repellat recusandae. Eaque.
-          </p>
+        <div class="item item-3">
+          <div class="item-image">
+            <img src="./img/work/garaz-z-wiata.jpeg" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Projekt</p>
+              <h2 class="item-text-title">Garaz z wiata</h2>
+            </div>
+          </div>
         </div>
-        <div class="box">
-          <i class="fas fa-thumbs-up fa-2x"></i>
-          <h4 class="title-about">Interaction</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            perferendis commodi laborum minima sapiente modi ab quisquam,
-            placeat, ut ipsam nulla voluptates deleniti esse. Fugiat, maxime.
-            Corporis, repellat recusandae. Eaque.
-          </p>
+        <div class="item item-4">
+          <div class="item-image">
+            <img src="./img/work/domek2fin.jpeg" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Projekt</p>
+              <h2 class="item-text-title">Garaz</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item item-5">
+          <div class="item-image">
+            <img src="./img/work/taras.jpg" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Projekt</p>
+              <h2 class="item-text-title">Taras</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item item-6">
+          <div class="item-image">
+            <img src="./img/work/domson.png" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Projekt</p>
+              <h2 class="item-text-title">Domek</h2>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <div class="achievements">
+      <div class="container-grid--1">
+        <div class="box bg-light">
+          <i class="fas fa-users fa-4x"></i>
+          <h4 class="title-about">Clients</h4>
+          <div class="numbers" data-value="100"></div>
+        </div>
+        <div class="box bg-dark">
+          <i class="fas fa-award fa-4x"></i>
+          <h4 class="title-about">Awards</h4>
+          <div class="numbers" data-value="3"></div>
+        </div>
+        <div class="box bg-light">
+          <i class="fas fa-hourglass fa-4x"></i>
+          <h4 class="title-about">Hours Worked</h4>
+          <div class="numbers" data-value="3500"></div>
+        </div>
+        <div class="box bg-dark">
+          <i class="fas fa-code-branch fa-4x"></i>
+          <h4 class="title-about">Projects Completed</h4>
+          <div class="numbers" data-value="135"></div>
+        </div>
+      </div>
+    </div>
+    <script src="/dist/js/main.js"></script>
   </body>
 </html>
