@@ -30,6 +30,7 @@ navBar.addEventListener("click", function (e) {
 
   const linkHash = clicked.getAttribute("href");
 
+  console.log(linkHash);
   document
     .querySelector(`${linkHash}`)
     .scrollIntoView({ block: "center", behavior: "smooth" });

@@ -169,11 +169,13 @@ a {
   transform: translateY();
   margin-top: 3rem;
   text-align: center; }
-  .section p {
-    font-size: 1.3rem; }
-  .section-hidden {
-    transform: translateY(5rem);
-    opacity: 0; }
+
+.section p {
+  font-size: 1.3rem; }
+
+.section-hidden {
+  transform: translateY(5rem);
+  opacity: 0; }
 
 .realization .operations {
   max-width: 65rem;
@@ -232,10 +234,81 @@ a {
     width: 7rem;
     border-radius: 50%; }
 
+.opinie {
+  height: 100rem; }
+  .opinie .opinions .op {
+    align-items: center;
+    justify-content: center; }
+    .opinie .opinions .op .person {
+      display: flex; }
+      .opinie .opinions .op .person img {
+        height: 20px; }
+
 .work {
   height: auto; }
 
+.contact .box-content {
+  display: flex;
+  justify-content: space-evenly;
+  height: 28rem;
+  margin: 0 3rem;
+  text-align: start; }
+  .contact .box-content .box {
+    position: relative;
+    margin: 0 1.2rem;
+    width: 34%;
+    color: #fffefb;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem; }
+    .contact .box-content .box .box-image {
+      width: 100%;
+      height: 100%;
+      background-color: #262626;
+      border-radius: 0.5rem; }
+    .contact .box-content .box .box-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+      border-radius: 0.5rem;
+      transition: opacity 0.3s; }
+    .contact .box-content .box-about {
+      position: absolute;
+      bottom: 0;
+      padding: 0 2rem;
+      text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s; }
+      .contact .box-content .box-about p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        font-weight: 300;
+        color: #eee;
+        width: 100%;
+        margin-bottom: 1rem; }
+      .contact .box-content .box-about h4 {
+        font-size: 1.5rem;
+        color: #c2b194; }
+      .contact .box-content .box-about button {
+        width: 8rem;
+        height: 2rem;
+        background-color: #c2b194;
+        border: none;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #eee;
+        border-radius: 0.3rem;
+        box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4); }
+    .contact .box-content .box:hover .box-about {
+      bottom: 2rem;
+      opacity: 1;
+      visibility: visible; }
+    .contact .box-content .box:hover .box-image img {
+      opacity: 0.5; }
+
 .achievements {
+  margin-top: 3rem;
   height: auto; }
   .achievements .container-grid--1 .box {
     padding: 4rem 0; }
