@@ -1,0 +1,27 @@
+.achievements {
+  margin: 1rem 0;
+  height: 20rem;
+  .container-grid--1 {
+    @extend %container-grid;
+
+    .box {
+      padding: 4rem 0;
+
+      .title-about {
+        text-transform: none;
+        font-size: 1.3rem;
+        padding: 0.8rem 0;
+        color: $border-color;
+      }
+
+      i {
+        color: $primary-color;
+      }
+
+      .numbers {
+        color: $primary-color;
+        font-size: 2rem;
+      }
+    }
+  }
+}
